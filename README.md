@@ -88,6 +88,8 @@ Use an **instruct-tuned, uncensored ("abliterated"/HERETIC) model** — a standa
 4. Watch progress under the `[StoryPromptBatch]` tag in the console.
 
 ### Wiring into a Krea 2 workflow
+<img width="978" height="1088" alt="Screenshot 2026-07-27 181733" src="https://github.com/user-attachments/assets/c021f21f-ef9a-42d2-90b8-c101fe91bc59" />
+
 
 Connect the **`prompts`** output to a `CLIP Text Encode` node's `text` input (right-click the encode node → convert `text` widget to input). Because `prompts` is a **list**, every downstream node runs once per prompt — one queue press renders the whole batch. Load your Krea 2 checkpoint and any LoRAs from your map with normal `Load LoRA` nodes; the trigger words are already in the prose.
 
