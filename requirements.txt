@@ -1,0 +1,6 @@
+# Mandatory: the node cannot register without it.
+# The default pip build is CPU-only. For NVIDIA GPU offload install a CUDA wheel
+# instead — see the "GPU builds" section of the README.
+# Newer model families (e.g. Qwen 3.5) need a recent version — if a model fails
+# to load with "unknown model architecture", upgrade with: pip install -U llama-cpp-python
+llama-cpp-python>=0.3.0

@@ -1,0 +1,14 @@
+[project]
+name = "story-prompts-krea"
+description = "ComfyUI node that turns a story .txt into a batch of Krea 2 image prompts using a local GGUF LLM (llama-cpp-python), with consistent characters/settings and LoRA trigger-word support."
+version = "1.0.0"
+license = { file = "LICENSE" }
+dependencies = ["llama-cpp-python>=0.3.0"]
+
+[project.urls]
+Repository = "https://github.com/your-username/Story_Prompts_Node"
+
+[tool.comfy]
+PublisherId = ""
+DisplayName = "Story → Krea 2 Prompt Batch"
+Icon = ""

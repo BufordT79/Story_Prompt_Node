@@ -1,0 +1,15 @@
+# Paste these lines into the node's character_lora_map field.
+# Format:  Name | lora file (optional) | trigger word (optional) | visual description (optional)
+# Everything after Name is optional. '#' lines are comments.
+
+# --- entries matching examples/sample_story.txt ---
+Mira | mira_char_v2.safetensors | mira_xj23 | a young woman with short auburn hair, green eyes, and a weathered brown leather jacket
+Jonas | | | a wiry old ferryman with a silver beard, deep-set eyes, and a patched gray oilskin coat
+Old Mill | | | a crumbling three-story stone watermill with a moss-covered wheel beside a fast, dark river
+
+# --- detailed reference examples (commented out): the more specific the description
+# --- (age, build, hair, eyes, distinguishing marks, signature clothing), the more
+# --- consistent the character looks across the whole batch.
+# Lena | lena_flux_v3.safetensors | lena_v3 | a curvy young woman in her mid-20s with long platinum-blonde hair, blue eyes, a small star tattoo on her left collarbone, and a fitted black slip dress
+# Marcus | | | a tall broad-shouldered man with a trimmed dark beard, a buzz cut, and a gray henley with rolled-up sleeves
+# Neon Loft | loft_env_v1.safetensors | neonloft | a downtown loft at night with exposed brick, pink-and-blue neon signs, and rain-streaked floor-to-ceiling windows

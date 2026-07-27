@@ -2,6 +2,10 @@
 
 **A ComfyUI custom node that turns a story into a batch of Krea 2 image prompts — using a local, uncensored GGUF LLM. No cloud API. No key. No network calls.**
 
+![License: MIT](https://img.shields.io/badge/license-MIT-green)
+![ComfyUI](https://img.shields.io/badge/ComfyUI-custom%20node-blue)
+![llama-cpp-python](https://img.shields.io/badge/LLM-llama--cpp--python-orange)
+![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey)
 
 Point it at a `.txt` story, tell it how many images you want, and it generates one long-form natural-language prompt per key visual moment — with consistent recurring characters, LoRA trigger words woven into the prose, and both in-graph and on-disk output.
 
@@ -87,7 +91,7 @@ Use an **instruct-tuned, uncensored ("abliterated"/HERETIC) model** — a standa
 
 Connect the **`prompts`** output to a `CLIP Text Encode` node's `text` input (right-click the encode node → convert `text` widget to input). Because `prompts` is a **list**, every downstream node runs once per prompt — one queue press renders the whole batch. Load your Krea 2 checkpoint and any LoRAs from your map with normal `Load LoRA` nodes; the trigger words are already in the prose.
 
-Prefer file-based batching? Point any prompts-from-directory loader at `output_dir` — the files are always written as well (reruns overwrite previous text outputs).
+Prefer file-based batching? Point any prompts-from-directory loader at `output_dir` — the files are always written as well (reruns overwrite).
 
 ## Node reference
 
