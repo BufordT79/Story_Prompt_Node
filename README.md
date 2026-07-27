@@ -87,7 +87,7 @@ Use an **instruct-tuned, uncensored ("abliterated"/HERETIC) model** — a standa
 
 Connect the **`prompts`** output to a `CLIP Text Encode` node's `text` input (right-click the encode node → convert `text` widget to input). Because `prompts` is a **list**, every downstream node runs once per prompt — one queue press renders the whole batch. Load your Krea 2 checkpoint and any LoRAs from your map with normal `Load LoRA` nodes; the trigger words are already in the prose.
 
-Prefer file-based batching? Point any prompts-from-directory loader at `output_dir` — the files are always written as well (reruns overwrite).
+Prefer file-based batching? Point any prompts-from-directory loader at `output_dir` — the files are always written as well (reruns overwrite previous text outputs).
 
 ## Node reference
 
